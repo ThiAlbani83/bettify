@@ -1,11 +1,15 @@
 import { HiOutlineChevronDoubleDown } from "react-icons/hi";
+import bgImage from "../../assets/bgimage.png";
 
 const Hero = () => {
   return (
     <div className="pt-20 sm:pt-24 md:pt-28 lg:pt-32 pb-12 sm:pb-16 md:pb-20">
       <div className="relative h-[600px] sm:h-[650px] md:h-[700px] lg:h-[750px] xl:h-[800px] flex items-center justify-center mx-4 sm:mx-6 md:mx-8 lg:mx-12 xl:mx-20 rounded-2xl overflow-hidden">
         {/* Background Image */}
-        <div className="absolute inset-0 bg-[url('./bgimage.png')] bg-cover bg-center bg-no-repeat opacity-30 blur-xs" />
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30 blur-xs"
+          style={{ backgroundImage: `url(${bgImage})` }}
+        />
 
         {/* Gradient Overlay for better text readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40" />
